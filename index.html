@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hospital</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <h2>You are welcome! This is a website of hospital services. For registering your hospital please Login!</h2>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Contact Us</a>
+            <a href="" id="login">Login</a>
+        </div><br><br>
+        <form id="form1" class="form1">
+            <h3>Login</h3>
+            <p>Fill in the space below to continue</p>
+            <input type="text" placeholder="phone" id="phone"><br><br>
+            <input type="password" placeholder="password" id="password"><br><br> 
+            <button id="button1" type="submit">Login</button><br><br>
+        </form><br><br>
+        <div class="doctor">
+            <img src="doctors.jpg" style="padding-left: 90px;">
+        </div>
+        
+    </div>
+    <div class="dashboard">
+        <div id="dashleft">
+            <i class="fa fa-hospital-o fa-2x" aria-hidden="true"></i> &nbsp;&nbsp; <button id="button2">Hospitals</button>  <br><br>
+            <i class="fa fa-user-md" style="font-size:36px;"></i> &nbsp;&nbsp; <button id="button3">Doctors</button> 
+        </div>
+       <form id="form2" class="form2">
+         <i class="fa fa-times fa-2x" aria-hidden="true" style="padding-left: 300px;"></i>
+         <p id="createHos" class="createHos">Create Hospital</p>  
+       </form>
+    </div><br><br>
+    <form id="form3" class="form3">
+        <input type="text" id="hospital" placeholder="Hospital name"><br><br>
+        <input type="text" id="code" placeholder="Code"><br><br>
+        <input type="text" id="type" placeholder="Type"><br><br>
+        <input type="text" id="district" placeholder="District"><br><br>
+        <input type="text" id="sector" placeholder="Sector"><br><br>
+        <input type="text" id="cell" placeholder="Cell"><br><br>
+        <input type="text" id="village" placeholder="Village"><br><br>
+        <input type="text" id="email" placeholder="email"><br><br>
+        <button id="button4">Create</button><br><br>
+    </form>
+    
+</body>
+<script src="hospital.js"></script>
+</html>
