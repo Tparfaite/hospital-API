@@ -56,6 +56,8 @@ const fa=document.getElementsByClassName("fa-times")[0].addEventListener("click"
     form2.classList.toggle("hideForm2");
 })
 
+let lastToken=localStorage.getItem("token");
+console.log(lastToken);
 
 const createHospital=async()=>{
 
@@ -82,13 +84,15 @@ formData.append("email",email);
 
 const creating=await (await fetch("https://mdbackend.herokuapp.com/api/create-hospital",{
     method:"POST",
-    headers:{"Accept":"application/json"},
+    headers:{"Accept":"application/json","authorization":"Bearer lastToken" },
     body:formData
 })).json()
 console.log(creating);
 console.log("heyy");
+
 }
 const button4=document.getElementById("button4").addEventListener("click",e=>{
     e.preventDefault();
     createHospital();
 })
+
